@@ -1,0 +1,224 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+
+/*______Фоновое изображение_____*/
+.image-1 {
+    float: center;
+    display: table;
+    margin: 0 auto;
+}
+.image-2 {
+    float: right;
+    display: table;
+    margin: 0 auto;
+    margin-top: 1%;
+    width: 76%;
+}
+
+
+/*______Подключил flexbox и разбил на 3 блока______*/
+* {
+  	box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1;
+}
+
+#main > article {
+    flex: 1;
+}
+
+#main > nav,
+    #main > aside {
+    flex: 0 0 14vw;
+    background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+}
+
+#main > nav {
+    order: -1;
+}
+
+article, nav, aside {
+    padding: 2em;
+}
+
+
+/*______Редактируем верхнее меню внутри блока______*/
+.menu {
+    float: center;
+	width: 100%;
+	display: table;
+}
+
+.menu ul {
+	display: table-row;
+}
+
+.menu li {
+	display: table-cell;
+	background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+	font-size: 17px;
+	font-family: 'Arial', 'Verdana', sans-serif;
+}
+
+
+/*______Тень верхнего блока______*/
+.menu {
+    box-shadow: 0px 10px 0px -1px rgba(255, 153, 21, 1);
+}
+
+.menu li a {
+	display: block;
+	padding: 40px 15px;
+	color: orange;
+	text-align: center;
+}
+
+
+/*______Для боковой панели с лева______*/
+.left-menu ul {
+	display: grid;
+}
+
+.left-menu li {
+    display: block;
+    width: 300px;
+    height: 45px;
+    padding: 10px;
+	background: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+	font-size: 17px;
+	font-family: 'Arial', 'Verdana', sans-serif;
+
+}
+
+.left-menu ul li:hover {
+	background: orange;
+}
+
+.left-menu li a {
+	display: block;
+	color: #fff;
+	text-align: left;
+	border-bottom: dotted 2px #fff;
+    padding: 6px;
+}
+
+
+/*______Тень для боковой панели с права______*/
+.left-menu {
+	box-shadow: -10px -10px 0px rgba(255, 153, 21, 1);
+	width: 300px;
+}
+
+
+/*______Отступ для заголовка описания страницы______*/
+#text {
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-size: 35px;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+}
+
+
+/*______Блок 1 с текстом______*/
+#container-block1 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+    font-size: 17px;
+    text-align:justify;
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+    margin-bottom: 20px;
+}
+
+/*______Блок 2 с текстом______*/
+#container-block2 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+    font-size: 17px;
+    text-align:justify;
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+}
+
+/*______Блок 3 с текстом______*/
+#container-block3 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+    font-size: 17px;
+    text-align:justify;
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+
+/*______Блок 4 с текстом______*/
+#container-block4 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+    font-size: 17px;
+    text-align:justify;
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+
+/*______Блок 5 с текстом______*/
+#container-block5 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+    font-size: 17px;
+    text-align:justify;
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+
+/*______Блок 6 с текстом______*/
+#container-block6 {
+    font-family: 'Arial', 'Verdana', sans-serif;
+    color: linear-gradient(to bottom, rgba(240,183,161,1) 0%,rgba(76,36,0,1) 0%);
+    font-size: 17px;
+    text-align:justify;
+    float: right;
+    width: 75.5%;
+    margin-left: 320px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+}
